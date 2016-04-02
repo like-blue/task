@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三栏式布局</title>
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		-webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+	}
+	#body{
+		width: 100%; 
+		min-width: 600px; 
+		background-color: #eee;
+		overflow: hidden;
+        *zoom: 1;
+	}
+	#body,.name,.introduce,.member{
+		padding:20px;
+		border: 1px solid #999;
+	}
+	#body .name {
+		width: 200px;
+		float: left;
+	}
+	#body .name span {
+		position: absolute;
+		left:80;
+	}
+	#body .introduce {
+		margin:0px 140px 0px 220px ;
+	}
+	#body .name span {
+		float: right;
+		font-size:16px;
+	}
+    #body .member {
+    	width: 120px;
+    	float: right;
+    	min-height: 540px;
+    	padding-bottom: 0;
+    }	
+    #body .member img {
+    	margin-bottom: 20px;
+    }	
+    </style>
+</head>
+<body>
+<div id="body">
+	<div class="name">
+	   	<img src="sign-t.png" width="80" height="80">
+	   	<span>犬次郎联盟</span>
+	   </div>
+	<div class="member">
+	<img src="toux.jpg" width="80" height="80">
+	<img src="toux.jpg" width="80" height="80">
+	<img src="toux.jpg" width="80" height="80">
+	<img src="toux.jpg" width="80" height="80">
+	<img src="toux.jpg" width="80" height="80">
+	</div>
+	   <div class="introduce">
+	     <h2 style="padding-bottom:20px;">关于联盟</h2>
+	     <p>
+	   	<span style="display: block;padding-bottom:10px;">关于这名字呢，真是偶尔没有想太多的含义。犬次郎也有人常会说不就是二狗子嘛，确实就是二狗子。</span>后来真正组成队了就慢慢的想给它一些含义，名字是希望我们的队伍是欢乐的讨论环境，二货欢乐多嘛。还有像犬类那样对代码忠贞，从开始到结束希望我们都记得最初报名的初衷。就是这样，汪~
+	     </p>
+	   </div>
+</div>
+</body>
+</html>
